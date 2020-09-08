@@ -9,7 +9,7 @@ class Song
   end
 
   def self.all
-    puts "[<Song:0x000000000317b558 @name="Man in the Mirror">]"
+    binding.pry
   end
 
   # def self.new_by_filename(file)
