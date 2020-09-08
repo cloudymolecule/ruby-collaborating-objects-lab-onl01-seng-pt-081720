@@ -1,14 +1,14 @@
 require "pry"
 
 class Song
-  attr_accessor :name, :artist, :lists
+  attr_accessor :name, :artist, :list
 
   @list = []
 
   def initialize(name)
     @name = name
 
-    @list
+    @list << self.name
     binding.pry
   end
 
