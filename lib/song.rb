@@ -10,7 +10,7 @@ class Song
   end
 
   def self.all
-    @@all.each do |y|
+    @@list.each do |y|
       puts y.name
     end
   end
