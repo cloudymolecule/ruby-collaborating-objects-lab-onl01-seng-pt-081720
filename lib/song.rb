@@ -1,15 +1,17 @@
 require "pry"
 
 class Song
-  attr_accessor :name, :artist
+  attr_accessor :name, :artist, :s
 
   def initialize(name)
     @name = name
+    @s = []
+    @s << name
   end
 
   def self.all
-    @@all
-    
+    @s
+
   end
 
   def self.new_by_filename(file)
