@@ -10,7 +10,9 @@ class Song
   end
 
   def self.all
-    @s
+    @s.each do |so|
+      so.name
+    end
 
   end
 
