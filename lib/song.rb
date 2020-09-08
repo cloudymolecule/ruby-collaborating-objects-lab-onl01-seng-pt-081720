@@ -20,7 +20,7 @@ class Song
     cancion = data[1]
     art = data [0]
     nueva = Song.new(cancion)
-    nueva.art = art
+    nueva.artist_name = artist_name
     nueva
 
   end
