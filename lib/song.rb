@@ -1,16 +1,16 @@
 require "pry"
 
 class Song
-  attr_accessor :name, :artist
+  attr_accessor :name, :artist, :lists
 
   def initialize(name)
     @name = name
-    @@list = []
-    @@lists << name
+    @lists = @lists << @lists
+    @lists << name
   end
 
   def self.all
-    @@list.each do |y|
+    @@lists.each do |y|
       puts y.name
     end
   end
