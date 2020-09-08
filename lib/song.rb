@@ -13,6 +13,10 @@ class Song
     @@all
   end
 
+  def save
+    self.class.all << self
+  end
+
   # def self.new_by_filename(file)
   #   cancion = file.split(" - ")
   #   nueva = Song.new(cancion[1])
