@@ -2,7 +2,7 @@ require "pry"
 
 class Song
   attr_accessor :name, :artist
-  
+
   def initialize(name)
     @name = name
     @@all << self
@@ -15,7 +15,7 @@ class Song
   def self.new_by_filename(file)
     cancion = file.split(" - ")
     nueva = Song.new(cancion[1])
-    nueva.artist_name = cancion[0]
+    
     nueva
 
   end
