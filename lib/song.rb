@@ -3,9 +3,11 @@ require "pry"
 class Song
   attr_accessor :name, :artist, :lists
 
+  @list = []
+  
   def initialize(name)
     @name = name
-    @list = []
+
     @list << self.name
   end
 
