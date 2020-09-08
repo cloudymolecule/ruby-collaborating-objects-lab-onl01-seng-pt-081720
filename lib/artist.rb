@@ -20,9 +20,10 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    name
+    @@all.each do |art|
       binding.pry
-    
+    end
+
   end
 
 end
