@@ -19,7 +19,7 @@ class Artist
     @songs << song
   end
 
-  def find_or_create_by_name(name)
+  def self.find_or_create_by_name(name)
     @@all.each do |art|
       binding.pry
     end
