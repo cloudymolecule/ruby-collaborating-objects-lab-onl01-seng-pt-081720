@@ -8,17 +8,17 @@ class Artist
     @@all << self
   end
 
-  def self.all
-    @@all
-  end
+  # def self.all
+  #   @@all
+  # end
 
-  def add_song(name)
-    @songs << name
-  end
+  # def add_song(name)
+  #   @songs << name
+  # end
 
   def self.find_or_create_by_name(name)
     @@all.each do |art|
-      binding.pry 
+      binding.pry
     end
   end
 
