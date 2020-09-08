@@ -19,7 +19,8 @@ class Artist
     if self.find(name)
       self.find(name)
     else
-      name = self.new 
+      name = self.new
+    end
   end
 
 end
