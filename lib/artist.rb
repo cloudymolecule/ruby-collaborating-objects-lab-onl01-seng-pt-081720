@@ -12,16 +12,14 @@ class Artist
     @@all
   end
 
+  def add_song(name)
+    @songs << name
+  end
+
   def find_or_create_by_name(name)
     @@all.each do |art|
       binding.pry
     end
   end
-
-  # def add_song(name)
-  #   @songs << name
-  # end
-
-
 
 end
