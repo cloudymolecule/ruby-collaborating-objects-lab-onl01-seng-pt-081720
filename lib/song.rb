@@ -5,12 +5,12 @@ class Song
 
   def initialize(name)
     @name = name
-    @lists = []
-    @lists << self.name
+    @list = []
+    @list << self.name
   end
 
   def self.all
-    @@lists.each do |y|
+    @list.each do |y|
       puts y.name
     end
   end
