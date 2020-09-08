@@ -30,8 +30,7 @@ class Artist
   # end
 
   def self.find_or_create_by_name(name)
-    self.all.detect do |art|
-      art.name == name
+    self.all
       binding.pry
     end
   end
