@@ -3,19 +3,13 @@ require "pry"
 class Song
   attr_accessor :name, :artist, :list
 
-  @list = []
 
   def initialize(name)
     @name = name
-
-    @list << self.name
-    binding.pry
   end
 
   def self.all
-    @list.each do |y|
-      puts y.name
-    end
+    
   end
 
   # def self.new_by_filename(file)
