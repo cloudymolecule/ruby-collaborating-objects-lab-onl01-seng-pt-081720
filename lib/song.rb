@@ -3,19 +3,16 @@ require "pry"
 class Song
   attr_accessor :name, :artist
 
-  @@alll = []
+  @@all = []
   def initialize(name)
     @name = name
-
+    @@all << self
   end
 
   def self.all
-    @@alll
+    @@all
   end
 
-  def save
-    self.class.alll << self
-  end
 
 
   # def self.new_by_filename(file)
