@@ -6,7 +6,7 @@ class Song
   def initialize(name)
     @name = name
     @lists = @lists << @lists
-    @lists << name
+    @lists << self.name
   end
 
   def self.all
