@@ -5,25 +5,23 @@ class Song
 
   def initialize(name)
     @name = name
-    @s = []
-    @s << name
   end
 
   def self.all
-    @s
+    @@all.name
   end
 
-  def self.new_by_filename(file)
-    cancion = file.split(" - ")
-    nueva = Song.new(cancion[1])
-
-    nueva
-
-  end
-
-  def artist_name=(name)
-
-  end
+  # def self.new_by_filename(file)
+  #   cancion = file.split(" - ")
+  #   nueva = Song.new(cancion[1])
+  # 
+  #   nueva
+  # 
+  # end
+  # 
+  # def artist_name=(name)
+  # 
+  # end
 
 end
 
