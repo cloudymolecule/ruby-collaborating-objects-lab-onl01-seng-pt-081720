@@ -8,8 +8,7 @@ class Song
   end
 
   def self.all
-    @@all.each do |d|
-      puts d
+    @@all
     end
   end
 
