@@ -29,4 +29,9 @@ class Artist
     artist.name = name
     return artist
   end
+
+  def print_songs
+    @@all
+  end
+  
 end
