@@ -13,7 +13,7 @@ class Artist
   end
 
   def add_song(song)
-    @@all << self
+    self.name = song
   end
 
   def find_or_create_by_name(name)
