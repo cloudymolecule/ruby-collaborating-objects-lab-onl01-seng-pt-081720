@@ -32,7 +32,7 @@ class Artist
   def self.find_or_create_by_name(name)
     @@all.detect do |art|
       if art.name == name
-        return art.name
+        return art
       end
     end
     artist = self.new(name)
