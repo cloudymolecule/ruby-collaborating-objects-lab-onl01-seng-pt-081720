@@ -9,7 +9,7 @@ class Song
 
   def self.all
     @@all.each do |d|
-      puts d.name
+      puts d
     end
   end
 
