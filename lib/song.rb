@@ -8,7 +8,9 @@ class Song
   end
 
   def self.all
-    @@all.name
+    @@all.each do |d|
+      puts d.name
+    end
   end
 
   def self.new_by_filename(file)
