@@ -9,7 +9,7 @@ class Song
 
   def self.all
     @@all.each do |d|
-      return d.name
+    binding.pry
     end
   end
 
