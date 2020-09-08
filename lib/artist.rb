@@ -19,13 +19,10 @@ class Artist
     @songs << song
   end
 
-
-
-
-  # def find_or_create_by_name(name)
-  #   @@all.each do |art|
-  #
-  #   end
-  # end
+  def find_or_create_by_name(name)
+    @@all.each do |art|
+      binding.pry
+    end
+  end
 
 end
